@@ -22,8 +22,8 @@ func NewMemStatsLoader(url string) *MemStatsLoader {
 		},
 	}
 }
-func (m *MemStatsLoader) Load() (*runtime.MemStats, error) {
-	res, err := m.client.Get(m.url)
+func (p *MemStatsLoader) Load() (*runtime.MemStats, error) {
+	res, err := p.client.Get(p.url)
 	if err != nil {
 		return nil, fmt.Errorf("connect err %w", err)
 	}
