@@ -8,6 +8,7 @@
 ## Usage
 ### Prep
 Add [expvars](https://golang.org/pkg/expvar/) to your Go server
+
 	import _ "expvar"
 
 ### Run server monitor
